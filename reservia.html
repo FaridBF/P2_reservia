@@ -3,30 +3,62 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projet 2 - Transformez une maquette en site web</title>
     <link rel="stylesheet" href="reservia.css">
-    <link href="/Users/Bouras/Documents/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family= Raleway:wght@100 & display=swap" rel="feuille de style">
+    <script src="https://kit.fontawesome.com/05a4ddde0a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li>Hébergements</li>
                 <li>Activités</li>
                 <li>S'inscrire</li>
             </ul>
-            <img src="images/logo/Reservia@3x.png" alt="Logo Réservia">
+            <img src="images/logo/Reservia.svg" alt="Logo Réservia">
         </nav>
     </header>
     <main>
+
         <!-- Section 1 -->
         <section>
-            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-
+            <div class="navigation">
+                <form role="search">
+                    <div>
+                        <i class="fas fa-map-marker-alt icone_localisation"></i>
+                        <input type="search" id="marecherche" name="q" placeholder="Marseille,France"
+                            aria-label="Rechercher parmi le contenu du site">
+                        <button class="rechercher" type="button">Rechercher</button>
+                    </div>
+                </form>
+            </div>
+            <div class="filtre">
+                <div id="les_filtres">
+                    <p>Filtres</p>
+                </div>
+                <div id="economique">
+                    <p><i class="fas fa-money-bill-wave icone_filtre"></i> Économiques</p>
+                </div>
+                <div id="familial">
+                    <p><i class="fas fa-child icone_filtre"></i> Familial</p>
+                </div>
+                <div id="romantique">
+                    <p><i class="fas fa-heart icone_filtre"></i> Romantique</p>
+                </div>
+                <div id="animaux_autorises">
+                    <p><i class="fas fa-dog icone_filtre"></i> Animaux autorisés</p>
+                </div>
+            </div>
+            <div class="info">
+                <p><i class="fas fa-info icone_info"></i> Plus de 500 logements sont disponibles dans cette
+                    ville</p>
+            </div>
         </section>
 
         <!-- Section 2 -->
@@ -56,6 +88,7 @@
                 </div>
             </aside>
         </section>
+
         <!-- Section 3 -->
         <section>
             <h2>Activités à Marseille</h2>
