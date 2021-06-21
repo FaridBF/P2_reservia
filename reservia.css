@@ -57,13 +57,10 @@ p {
 
 .rechercher {
   border: 0;
-  height: 34px;
-  line-height: 0.5;
-  padding: 15px 28px;
   font-size: 13px;
-  text-align: center;
   color: #fff;
-  border-radius: 0 7px 7px 0;
+  width: 123px;
+  height: 37px;
   background-color: #0065fc;
 }
 
@@ -71,9 +68,9 @@ p {
   border: 1px solid;
   border-color: #e7e7e7;
   border-radius: 10px 10px 10px 10px;
-  height: 34px;
-  width: 326px;
-  margin-top: 13px;
+  height: 33px;
+  width: 327px;
+  overflow: hidden;
 }
 
 #marecherche {
@@ -84,6 +81,7 @@ p {
 .filtre {
   display: flex;
   margin-top: 30px;
+  margin-bottom: 30px;
   flex-direction: row;
   width: 100%;
   font-weight: bolder;
@@ -102,7 +100,7 @@ p {
 #familial,
 #romantique,
 #animaux_autorises {
-  border: 1px solid;
+  border: 2px solid;
   border-color: #e7e7e7;
   border-radius: 50px;
   height: 33px;
@@ -136,7 +134,7 @@ p {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   padding: 9px;
-  width: 15px;
+  width: 16px;
   background-color: #f2f2f2;
 }
 
@@ -164,6 +162,7 @@ p {
 
 h2 {
   margin-left: 42px;
+  margin-top: 35px;
 }
 .prix {
   margin-top: -28px;
@@ -178,7 +177,7 @@ h2 {
 .hebergements_groupe {
   display: flex;
   justify-content: space-between;
-  height: 700px;
+  height: 760px;
 }
 
 #marseille {
@@ -187,6 +186,8 @@ h2 {
 
 .hebergement_bg {
   background-color: #f2f2f2;
+  border-radius: 20px;
+  margin-top: 30px;
 }
 
 #hosts {
@@ -199,6 +200,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0px 30px;
+  margin-top: 40px;
 }
 
 .hebergement {
@@ -207,9 +209,10 @@ h2 {
   max-height: 228px;
   border: solid 4px;
   border-color: white;
+  border-radius: 16px;
   background: white;
-  border-radius: 12px;
   margin: 0px 0px 60px 0px;
+  overflow: hidden;
 }
 
 .image_hebergement {
@@ -220,7 +223,6 @@ h2 {
 .image_hebergement img {
   height: 150px;
   width: 234px;
-  border-radius: 10px;
 }
 
 .texte_hebergement {
@@ -249,16 +251,19 @@ h2 {
   width: 28%;
 }
 
-/* #chart_line_up {
-  font-size: 17px;
-  display: flex;
-} */
+.icone_chart_line_up {
+  position: absolute;
+  margin-left: 340px;
+  margin-top: -46px;
+  font-size: 24px;
+}
 
 .liste_hebergements_populaire {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 392px;
+  margin-top: 40px;
 }
 
 .hebergement_p {
@@ -271,40 +276,46 @@ h2 {
   border-radius: 12px;
   margin: 0px 0px 60px 0px;
   max-width: 305px;
+  overflow: hidden;
 }
 
 .image_hebergement_populaire img {
   height: 142px;
   width: 135px;
-  border-radius: 10px;
 }
 
 /*Section 3*/
 
 .activites_groupe {
-  height: 719px;
+  height: 560px;
   width: 1445px;
 }
 
 h4 {
   font-size: 22px;
+  margin-left: 45px;
 }
 
 .liste_activites {
   display: flex;
+  justify-content: space-around;
 }
 
 .activites {
   display: flex;
   flex-direction: column;
-  border: solid 4px;
-  border-color: white;
-  border-radius: 12px;
+  border-bottom: solid 3px;
+  border-color: #e3e0e0;
+  border-radius: 16px;
+  background: white;
+  overflow: hidden;
 }
 
 .texte_activites {
   display: flex;
   flex-direction: column;
+  font-size: 17px;
+  margin-left: 12px;
 }
 
 .vieux_port {
@@ -313,8 +324,8 @@ h4 {
 }
 
 .vieux_port img {
-  height: 400px;
-  width: 260px;
+  height: 410px;
+  width: 255px;
 }
 
 .Fort_de_Pomegues {
@@ -323,8 +334,8 @@ h4 {
 }
 
 .Fort_de_Pomegues img {
-  height: 210px;
-  width: 270px;
+  height: 195px;
+  width: 255px;
 }
 
 .iles_du_Frioul {
@@ -333,22 +344,20 @@ h4 {
 }
 
 .iles_du_Frioul img {
-  height: 200px;
-  width: 270px;
+  height: 100px;
+  width: 255px;
 }
 
-.test {
+.groupe_1 {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.test_2 {
+.groupe_2 {
   display: flex;
   flex-direction: column;
-}
-.test_3 {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Parc_National_des_Calanques {
@@ -357,8 +366,8 @@ h4 {
 }
 
 .Parc_National_des_Calanques img {
-  height: 400px;
-  width: 260px;
+  height: 410px;
+  width: 255px;
 }
 
 .Notre_Dame_de_la_Garde {
@@ -367,8 +376,8 @@ h4 {
 }
 
 .Notre_Dame_de_la_Garde img {
-  height: 200px;
-  width: 270px;
+  height: 125px;
+  width: 255px;
 }
 
 .Parc_Longchamps {
@@ -377,8 +386,8 @@ h4 {
 }
 
 .Parc_Longchamps img {
-  height: 210px;
-  width: 270px;
+  height: 180px;
+  width: 255px;
 }
 
 /*Footer*/
@@ -389,8 +398,11 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   height: 175px;
+  margin-top: 20px;
   margin-left: -15px;
   padding-left: 30px;
+  padding-top: 15px;
+  align-items: flex-start;
 }
 
 .taille {
