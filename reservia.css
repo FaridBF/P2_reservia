@@ -203,13 +203,13 @@ h2 {
 
 .hebergement {
   width: 234px;
+  max-width: 250px;
   max-height: 228px;
   border: solid 4px;
   border-color: white;
   background: white;
   border-radius: 12px;
   margin: 0px 0px 60px 0px;
-  max-width: 250px;
 }
 
 .image_hebergement {
@@ -282,27 +282,24 @@ h2 {
 /*Section 3*/
 
 .activites_groupe {
-  height: 700px;
+  height: 719px;
+  width: 1445px;
 }
 
-#activites_marseille {
-  width: 100%;
+h4 {
+  font-size: 22px;
 }
+
 .liste_activites {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .activites {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-}
-
-.image_activites img {
-  height: 200px;
+  border: solid 4px;
+  border-color: white;
+  border-radius: 12px;
 }
 
 .texte_activites {
@@ -310,8 +307,78 @@ h2 {
   flex-direction: column;
 }
 
-#vieux_port {
-  height: 50px;
+.vieux_port {
+  max-height: 500px;
+  max-width: 290px;
+}
+
+.vieux_port img {
+  height: 400px;
+  width: 260px;
+}
+
+.Fort_de_Pomegues {
+  max-height: 500px;
+  max-width: 290px;
+}
+
+.Fort_de_Pomegues img {
+  height: 210px;
+  width: 270px;
+}
+
+.iles_du_Frioul {
+  max-height: 500px;
+  max-width: 290px;
+}
+
+.iles_du_Frioul img {
+  height: 200px;
+  width: 270px;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+}
+
+.test_2 {
+  display: flex;
+  flex-direction: column;
+}
+.test_3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.Parc_National_des_Calanques {
+  max-height: 500px;
+  max-width: 290px;
+}
+
+.Parc_National_des_Calanques img {
+  height: 400px;
+  width: 260px;
+}
+
+.Notre_Dame_de_la_Garde {
+  max-height: 500px;
+  max-width: 290px;
+}
+
+.Notre_Dame_de_la_Garde img {
+  height: 200px;
+  width: 270px;
+}
+
+.Parc_Longchamps {
+  max-height: 500px;
+  max-width: 290px;
+}
+
+.Parc_Longchamps img {
+  height: 210px;
+  width: 270px;
 }
 
 /*Footer*/
