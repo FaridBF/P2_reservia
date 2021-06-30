@@ -69,7 +69,7 @@ p {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   padding: 10px;
-  width: 17px;
+  width: 5%;
   background-color: #f2f2f2;
 }
 
@@ -77,7 +77,7 @@ p {
   display: flex;
 }
 
-.rechercher {
+.bouton_rechercher {
   border: 0;
   font-size: 14px;
   color: #fff;
@@ -92,14 +92,14 @@ p {
   border-color: #e7e7e7;
   border-radius: 8px;
   height: 34px;
-  width: 340px;
+  width: 23%;
   overflow: hidden;
   margin-top: -1px;
 }
 
 #marecherche {
-  width: 161px;
   border: 0px;
+  width: 47%;
 }
 
 .filtre {
@@ -120,13 +120,17 @@ p {
   align-items: center;
 }
 
+.recherche_responsive {
+  display: none;
+}
+
 #economique,
 #familial,
 #romantique,
 #animaux_autorises {
   border: 2px solid;
   border-color: #e7e7e7;
-  border-radius: 50px;
+  border-radius: 20px;
   height: 33px;
   display: flex;
   flex-direction: row;
@@ -163,7 +167,7 @@ p {
 
 .icone_filtre {
   border: solid 6px;
-  border-radius: 44%;
+  border-radius: 40%;
   border-color: #deebff;
   padding: 5px;
   background-color: #deebff;
@@ -172,9 +176,9 @@ p {
 
 .icone_info {
   border: solid 1px;
-  border-radius: 51%;
+  border-radius: 50%;
   border-color: #e7e7e7;
-  padding: 4px;
+  padding: 2px;
   background-color: #ffffff;
   color: #3787fd;
   padding-right: 6px;
@@ -285,7 +289,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 392px;
+  max-width: 100%;
   margin-top: 40px;
 }
 
@@ -428,6 +432,12 @@ footer {
   height: 178px;
 }
 
+h5 {
+  display: flex;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
 #footer-content {
   max-width: 1450px;
   display: flex;
@@ -440,7 +450,6 @@ footer {
 
 .taille li {
   list-style: none;
-  margin-left: -40px;
   margin-top: 10px;
 }
 
@@ -453,21 +462,16 @@ footer {
 
   .menu {
     width: 100%;
+    padding-left: 0%;
   }
 
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom: 3px solid #f2f2f2;
+  nav ul li {
+    padding-bottom: 8px;
   }
 
   nav ul li:hover {
     border-top: none;
-  }
-
-  nav ul li {
-    border-top: none;
+    width: 100%;
   }
 
   nav img {
@@ -483,46 +487,72 @@ footer {
     position: absolute;
     right: 20px;
     top: 20px;
-    max-width: 392px;
   }
 
   .media_hebergement_activite {
+    border-bottom: 2px #f2f2f2 solid;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-bottom-width: thin;
+  }
+  .media_hebergement_activite :hover {
     color: #0065fc;
     border-bottom: 2px #0065fc solid;
-    width: 100%;
-    padding-bottom: 25px;
-    max-width: 392px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
   }
 
   h1 {
     height: auto;
     margin-left: 20px;
-    max-width: 392px;
+    max-width: 100%;
     width: 73%;
   }
 
   .navigation {
     margin-left: 20px;
-    max-width: 392px;
+    max-width: 100%;
     width: 85%;
     height: 38px;
+    border-radius: 16px;
   }
 
   .p_section {
     margin-left: 20px;
     margin-bottom: 30px;
-    max-width: 392px;
+    max-width: 100%;
   }
 
   #marecherche {
-    width: 73%;
+    width: 75%;
   }
 
-  .rechercher {
+  .bouton_rechercher {
     width: 15%;
     border-radius: 15px;
     border-radius: 14px;
     overflow: hidden;
+    display: none;
+  }
+
+  .icone_rechercher {
+    display: none;
+  }
+
+  .recherche_responsive {
+    display: initial;
+    font-size: 15px;
+    width: 14%;
+    height: 38px;
+    background-color: #0065fc;
+    border-color: transparent;
+    border-radius: 15px;
+  }
+
+  .icone_recherche_responsive {
+    color: white;
   }
 
   /* FILTRES */
@@ -542,47 +572,46 @@ footer {
     display: flex;
     height: auto;
     width: auto;
-    max-width: 392px;
   }
 
   #economique {
-    width: 40%;
+    width: 44%;
     height: 34px;
-    max-width: 392px;
+    max-width: 100%;
     margin-right: 15px;
   }
 
   #familial {
-    width: 30%;
+    width: 32%;
     height: 34px;
-    max-width: 392px;
+    max-width: 100%;
   }
 
   .economique_familial {
     display: flex;
-    width: 94%;
+    width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
-    max-width: 392px;
+    max-width: 100%;
     justify-content: flex-start;
   }
 
   #romantique {
-    width: 36%;
+    width: 42%;
     height: 34px;
-    max-width: 392px;
+    max-width: 100%;
   }
 
   #animaux_autorises {
-    width: 49%;
+    width: 57%;
     height: 34px;
-    max-width: 392px;
+    max-width: 100%;
   }
 
   .info {
     margin-left: 30px;
-    max-width: 392px;
-    width: 75%;
+    max-width: 100%;
+    width: 79%;
     margin-top: -15px;
   }
 
@@ -598,16 +627,18 @@ footer {
 
   .icone_chart_line_up {
     position: absolute;
-    margin-left: 325px;
-    margin-top: -46px;
+    margin-left: 85%;
+    margin-top: -14%;
     font-size: 24px;
+    max-width: 100%;
+    align-items: center;
   }
 
   .liste_hebergements {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 392px;
+    max-width: 100%;
     margin-top: 35px; /* les vignettes prennent la largeur  */
   }
 
@@ -630,7 +661,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 392px;
+    max-width: 100%;
     margin-top: 40px;
   }
 
@@ -643,13 +674,13 @@ footer {
   .liste_activites {
     display: flex;
     flex-direction: column;
-    max-width: 392px;
+    max-width: 100%;
     width: 100%;
     margin: 30px 20px 0px 30px;
   }
 
   .activites {
-    max-width: 392px;
+    max-width: 100%;
   }
 
   .afficher_plus {
@@ -700,8 +731,10 @@ footer {
     margin-top: 25px;
   }
 
-  h3 {
+  h5 {
     display: flex;
+    margin-left: 40px;
+    font-size: 20px;
   }
 
   #footer-content {
@@ -710,6 +743,8 @@ footer {
     margin: 25px 0px 25px 20px;
   }
 }
+
+/* Responsive tablette */
 
 @media screen and (min-width: 700px) and (max-width: 1400px) {
   .filtre {
