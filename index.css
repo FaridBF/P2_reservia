@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   margin-top: 9px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", "Sans serif";
 }
 
 /*header*/
@@ -56,12 +56,12 @@ main {
 }
 
 h1 {
-  height: 11px;
-  font-size: 17px;
+  height: 13px;
+  font-size: 20px;
 }
 
 p {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .icone_localisation {
@@ -91,10 +91,9 @@ p {
   border: 1px solid;
   border-color: #e7e7e7;
   border-radius: 8px;
-  height: 34px;
+  height: 35px;
   width: 23%;
   overflow: hidden;
-  margin-top: -1px;
 }
 
 #marecherche {
@@ -114,9 +113,8 @@ p {
 
 #les_filtres {
   height: 39px;
-  width: 4%;
+  width: 5%;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -128,14 +126,13 @@ p {
 #familial,
 #romantique,
 #animaux_autorises {
-  border: 2px solid;
-  border-color: #e7e7e7;
+  border: 2px solid #d9d9d9;
   border-radius: 20px;
-  height: 33px;
+  height: 35px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 1%;
+  margin-right: 2rem;
   background-color: #ffffff;
   font-weight: bolder;
   text-decoration-color: black;
@@ -146,11 +143,11 @@ p {
 }
 
 #familial {
-  width: 35%;
+  width: 37%;
 }
 
 .economique_familial {
-  width: 20%;
+  width: 21%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -162,16 +159,23 @@ p {
 }
 
 #animaux_autorises {
-  width: 13%;
+  width: 10%;
 }
 
-.icone_filtre {
+.icone_select {
   border: solid 6px;
-  border-radius: 40%;
+  border-radius: 100%;
   border-color: #deebff;
-  padding: 5px;
+  height: 70%;
+  width: 20%;
   background-color: #deebff;
   color: #3787fd;
+  margin-left: -1px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .icone_info {
@@ -188,17 +192,27 @@ p {
 /*Section 2*/
 
 h2 {
-  margin-left: 42px;
-  margin-top: 35px;
+  margin-left: 30px;
 }
+
+.titre_icone {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-chart-line:before {
+  content: "\f201";
+}
+
 .prix {
-  margin-top: -28px;
-  margin-bottom: -16px;
+  margin-top: -30px;
+  margin-bottom: -24px;
 }
 
 .prix_p {
-  margin-top: -27px;
-  margin-bottom: -16px;
+  margin-top: -25px;
+  margin-bottom: 20px;
 }
 
 .hebergements_groupe {
@@ -214,11 +228,12 @@ h2 {
 .hebergement_bg {
   background-color: #f2f2f2;
   border-radius: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #hosts {
-  width: 70%;
+  width: 68%;
+  padding: 1rem;
 }
 
 .liste_hebergements {
@@ -275,14 +290,8 @@ h2 {
 }
 
 #hebergement_populaire {
-  width: 28%;
-}
-
-.icone_chart_line_up {
-  position: absolute;
-  margin-left: 340px;
-  margin-top: -46px;
-  font-size: 24px;
+  width: 23%;
+  padding: 2rem;
 }
 
 .liste_hebergements_populaire {
@@ -290,7 +299,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .hebergement_p {
@@ -441,7 +450,6 @@ h5 {
 #footer-content {
   max-width: 1450px;
   display: flex;
-  margin: auto;
 }
 
 .taille {
