@@ -775,75 +775,7 @@ h5 {
     max-width: 100%;
     width: 50%;
   }
-
-  /* HEBERGEMENTS */
-  .hebergements_groupe {
-    flex-direction: column-reverse;
-    height: auto;
-  }
-
-  #hebergement_populaire {
-    width: 100%; /* bg gris des + populaires prend tte largeur */
-  }
-
-  .icone_chart_line_up {
-    position: absolute;
-    margin-left: 85%;
-    margin-top: -14%;
-    font-size: 24px;
-    max-width: 100%;
-    align-items: center;
-  }
-
-  .liste_hebergements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    margin-top: 35px; /* les vignettes prennent la largeur  */
-  }
-
-  .hebergement {
-    height: 228px;
-    width: 85%;
-  }
-
-  h2 {
-    margin-left: 20px;
-    margin-top: 30px;
-  }
-
-  #hosts {
-    width: 100%;
-    background: white; /* fond gris de hebergement marseille */
-  }
-
-  .liste_hebergements_populaire {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    margin-top: 40px;
-  }
-
-  .activites_groupe {
-    height: auto;
-    width: 85%;
-    flex-direction: column;
-  }
-
-  .liste_activites {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    width: 100%;
-    margin: 30px 20px 0px 30px;
-  }
-
-  .activites {
-    max-width: 100%;
-  }
-
+  
 /*laptops*/
 @media screen and (min-width: 1000px) { 
 }
