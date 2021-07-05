@@ -310,7 +310,7 @@ h2 {
   background: white;
   border-radius: 12px;
   margin: 0px 0px 60px 0px;
-  max-width: 305px;
+  width: 90%;
   overflow: hidden;
 }
 
@@ -675,7 +675,7 @@ h5 {
   .liste_hebergements_populaire {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     max-width: 100%;
     margin-top: 40px;
   }
@@ -761,7 +761,9 @@ h5 {
 
 /* for tablets and for small laptops*/
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1300px) {
+  /* header*/
+
   .menu {
     width: 35%;
   }
@@ -771,6 +773,69 @@ h5 {
     width: 50%;
   }
 
+  /* HEBERGEMENTS */
+
+  .hebergements_groupe {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  #hebergement_populaire {
+    width: auto; /* bg gris des + populaires prend tte largeur */
+  }
+
+  .liste_hebergements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 35px; /* les vignettes prennent la largeur  */
+  }
+
+  .hebergement {
+    height: 228px;
+    width: 32%;
+  }
+
+  .image_hebergement {
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  #hosts {
+    width: 100%;
+    padding: 0;
+    background: #f2f2f2; /* fond gris de hebergement marseille */
+  }
+
+  .liste_hebergements_populaire {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hebergement_p {
+    display: flex;
+    height: 175px;
+    border: solid 4px;
+    border-color: white;
+    background: white;
+    border-radius: 12px;
+    width: 30%;
+    overflow: hidden;
+  }
+
+  .afficher_plus {
+    margin-bottom: 25px;
+  }
+
+  /* Section 3*/
+  h4 {
+    margin-top: 45px;
+  }
+
   .activites_groupe {
     height: auto;
     width: auto;
@@ -778,23 +843,23 @@ h5 {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: center;
     margin-bottom: 30px;
   }
 
   .liste_activites {
     width: 95%;
     height: auto;
-    max-height: 1094px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 1125px;
   }
 
   .activites {
     width: 48%;
     display: flex;
-    height: 200px;
+    height: 250px;
+    justify-content: space-around;
   }
 
   .vieux_port,
@@ -813,7 +878,7 @@ h5 {
   .Parc_Longchamps img,
   .Notre_Dame_de_la_Garde img,
   .Parc_National_des_Calanques img {
-    height: 160px;
+    height: 205px;
     width: 100%;
     object-fit: cover;
   }
@@ -825,21 +890,6 @@ h5 {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
-
-/* .filtre {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 230px;
-    margin-left: 20px;
-    margin-top: 0;
-    align-content: flex-start;
-    justify-content: space-evenly;
-    width: 202%;
-  } */
-
-/* laptops
-@media screen and (min-width: 1000px) { 
-} */
