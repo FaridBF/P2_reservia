@@ -653,7 +653,12 @@ h5 {
 
   .hebergement {
     height: 228px;
-    width: 85%;
+    width: 80%;
+  }
+
+  .image_hebergement {
+    max-width: 100%;
+    max-height: 80%;
   }
 
   h2 {
@@ -663,6 +668,7 @@ h5 {
 
   #hosts {
     width: 100%;
+    padding: 0;
     background: white; /* fond gris de hebergement marseille */
   }
 
@@ -676,7 +682,7 @@ h5 {
 
   .activites_groupe {
     height: auto;
-    width: 85%;
+    width: 80%;
     flex-direction: column;
   }
 
@@ -708,8 +714,8 @@ h5 {
   .iles_du_Frioul,
   .Parc_Longchamps,
   .Notre_Dame_de_la_Garde {
-    height: 165px;
-    width: 100%;
+    max-width: 100%;
+    max-height: 80%;
   }
 
   .vieux_port img,
@@ -756,11 +762,73 @@ h5 {
 /* for tablets and for small laptops*/
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
-  .menu{
+  .menu {
     width: 35%;
   }
 
-  /* .filtre {
+  .navigation {
+    max-width: 100%;
+    width: 50%;
+  }
+
+  .activites_groupe {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .liste_activites {
+    width: 95%;
+    height: auto;
+    max-height: 1094px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .activites {
+    width: 48%;
+    display: flex;
+    height: 200px;
+  }
+
+  .vieux_port,
+  .Fort_de_Pomegues,
+  .Parc_National_des_Calanques,
+  .iles_du_Frioul,
+  .Parc_Longchamps,
+  .Notre_Dame_de_la_Garde {
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  .vieux_port img,
+  .Fort_de_Pomegues img,
+  .iles_du_Frioul img,
+  .Parc_Longchamps img,
+  .Notre_Dame_de_la_Garde img,
+  .Parc_National_des_Calanques img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .groupe_1,
+  .groupe_2 {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* .filtre {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -771,11 +839,7 @@ h5 {
     justify-content: space-evenly;
     width: 202%;
   } */
-  .navigation {
-    max-width: 100%;
-    width: 50%;
-  }
-  
-/*laptops*/
+
+/* laptops
 @media screen and (min-width: 1000px) { 
-}
+} */
