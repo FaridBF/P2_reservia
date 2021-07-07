@@ -111,19 +111,12 @@ p {
   flex-wrap: wrap;
 }
 
-.les_filtres {
-  height: 30px;
-  width: 6%;
-  display: flex;
-  align-items: center;
-}
-
 .titre_filtre {
-  margin: 0 32px -18px 0;
-  display: flex;
-  align-items: center;
   font-weight: bold;
   font-size: 20px;
+  margin: 0 32px 16px 0;
+  display: flex;
+  align-items: center;
 }
 
 .section_filtre {
@@ -440,261 +433,6 @@ h5 {
   font-size: 20px;
 }
 
-/*Media queries*/
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  /* Header */
-
-  #logo_reservia {
-    width: 20%;
-    margin-left: 20px;
-  }
-
-  .menu {
-    width: 100%;
-    padding-left: 0%;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    padding-bottom: 8px;
-  }
-
-  nav ul li:hover {
-    border-top: none;
-    width: 100%;
-  }
-
-  nav img {
-    height: 35px;
-  }
-
-  .media_inscrire {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-
-  .media_hebergement_activite {
-    border-bottom: 2px #f2f2f2 solid;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    border-bottom-width: thin;
-  }
-  .media_hebergement_activite :hover {
-    color: #0065fc;
-    border-bottom: 2px #0065fc solid;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Section 1 - Navigation*/
-
-  h1 {
-    height: auto;
-    margin-left: 20px;
-    max-width: 100%;
-    width: 73%;
-  }
-
-  .p_section {
-    margin-left: 20px;
-    margin-bottom: 30px;
-    max-width: 100%;
-  }
-
-  .navigation {
-    margin-left: 20px;
-    max-width: 100%;
-    width: 85%;
-    height: 38px;
-    border-radius: 16px;
-  }
-
-  #marecherche {
-    width: 75%;
-  }
-
-  .bouton_rechercher {
-    width: 15%;
-    border-radius: 15px;
-    border-radius: 14px;
-    overflow: hidden;
-    display: none;
-  }
-
-  .icone_rechercher {
-    display: none;
-  }
-
-  .recherche_responsive {
-    display: initial;
-    font-size: 15px;
-    width: 17%;
-    height: 38px;
-    background-color: #0065fc;
-    border-color: transparent;
-    border-radius: 15px;
-  }
-
-  .icone_recherche_responsive {
-    color: white;
-  }
-
-  /* Section 1 Les filtres */
-
-  .info {
-    margin-left: 30px;
-    max-width: 100%;
-    width: 79%;
-    margin-top: -15px;
-  }
-
-  /* Section 2 - article */
-
-  .hebergements_groupe {
-    flex-direction: column-reverse;
-    height: auto;
-  }
-
-  #hosts {
-    width: 100%;
-    padding: 0;
-    background: white; /* fond gris de hebergement marseille */
-  }
-
-  h2 {
-    margin-left: 20px;
-    margin-top: 30px;
-  }
-
-  .liste_hebergements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    margin-top: 35px; /* les vignettes prennent la largeur  */
-  }
-
-  .hebergement {
-    height: 228px;
-    width: 80%;
-  }
-
-  .image_hebergement {
-    max-width: 100%;
-    max-height: 80%;
-  }
-
-  .afficher_plus {
-    margin-left: 35px;
-  }
-
-  /* Section 2 - aside */
-
-  #hebergement_populaire {
-    width: 100%; /* bg gris des + populaires prend tte largeur */
-  }
-
-  .icone_chart_line_up {
-    position: absolute;
-    margin-left: 85%;
-    margin-top: -14%;
-    font-size: 24px;
-    max-width: 100%;
-    align-items: center;
-  }
-
-  .liste_hebergements_populaire {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 100%;
-    margin-top: 40px;
-  }
-
-  /* Section 3 */
-
-  .activites_groupe {
-    height: auto;
-    width: 80%;
-    flex-direction: column;
-  }
-
-  .liste_activites {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    width: 100%;
-    margin: 30px 20px 0px 30px;
-  }
-
-  .activites {
-    max-width: 100%;
-  }
-
-  h4 {
-    font-size: 22px;
-    margin-left: 35px;
-    margin-top: 45px;
-  }
-
-  .vieux_port,
-  .Fort_de_Pomegues,
-  .Parc_National_des_Calanques,
-  .iles_du_Frioul,
-  .Parc_Longchamps,
-  .Notre_Dame_de_la_Garde {
-    max-width: 100%;
-    max-height: 80%;
-  }
-
-  .vieux_port img,
-  .Fort_de_Pomegues img,
-  .iles_du_Frioul img,
-  .Parc_Longchamps img,
-  .Notre_Dame_de_la_Garde img,
-  .Parc_National_des_Calanques img {
-    height: 160px;
-    width: 110%;
-    object-fit: cover;
-  }
-
-  .groupe_1,
-  .groupe_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 500px;
-  }
-
-  /* Footer */
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: auto;
-    margin-top: 25px;
-  }
-
-  #footer-content {
-    max-width: 1450px;
-    flex-direction: column;
-    margin: 25px 0px 25px 20px;
-  }
-
-  h5 {
-    display: flex;
-    margin-left: 40px;
-    font-size: 20px;
-  }
-}
-
 @media screen and (min-width: 700px) and (max-width: 1300px) {
   /* Header */
 
@@ -857,5 +595,269 @@ h5 {
     align-items: flex-start;
     max-width: 100%;
     margin-top: 40px;
+  }
+}
+
+/*Media queries*/
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  /* Header */
+
+  #logo_reservia {
+    width: 20%;
+    margin-left: 20px;
+  }
+
+  .menu {
+    width: 100%;
+    padding-left: 0%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding-bottom: 8px;
+  }
+
+  nav ul li:hover {
+    border-top: none;
+    width: 100%;
+  }
+
+  nav img {
+    height: 35px;
+  }
+
+  .filtre {
+    padding: 0 32px;
+    width: 100%;
+  }
+
+  .titre_filtre {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .media_inscrire {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .media_hebergement_activite {
+    border-bottom: 2px #f2f2f2 solid;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-bottom-width: thin;
+  }
+  .media_hebergement_activite :hover {
+    color: #0065fc;
+    border-bottom: 2px #0065fc solid;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Section 1 - Navigation*/
+
+  h1 {
+    height: auto;
+    margin-left: 20px;
+    max-width: 100%;
+    width: 73%;
+  }
+
+  .p_section {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .navigation {
+    margin-left: 20px;
+    max-width: 100%;
+    width: 85%;
+    height: 38px;
+    border-radius: 16px;
+  }
+
+  #marecherche {
+    width: 75%;
+  }
+
+  .bouton_rechercher {
+    width: 15%;
+    border-radius: 15px;
+    border-radius: 14px;
+    overflow: hidden;
+    display: none;
+  }
+
+  .icone_rechercher {
+    display: none;
+  }
+
+  .recherche_responsive {
+    display: initial;
+    font-size: 15px;
+    width: 17%;
+    height: 38px;
+    background-color: #0065fc;
+    border-color: transparent;
+    border-radius: 15px;
+  }
+
+  .icone_recherche_responsive {
+    color: white;
+  }
+
+  /* Section 1 Les filtres */
+
+  .info {
+    margin-left: 30px;
+    max-width: 100%;
+    width: 79%;
+    margin-top: -15px;
+  }
+
+  /* Section 2 - article */
+
+  .hebergements_groupe {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  #hosts {
+    width: 100%;
+    padding: 0;
+    background: white; /* fond gris de hebergement marseille */
+  }
+
+  h2 {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .liste_hebergements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 35px; /* les vignettes prennent la largeur  */
+  }
+
+  .hebergement {
+    height: 228px;
+    width: 80%;
+  }
+
+  .image_hebergement {
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  .afficher_plus {
+    margin-left: 35px;
+  }
+
+  /* Section 2 - aside */
+
+  #hebergement_populaire {
+    width: auto; /* bg gris des + populaires prend tte largeur */
+  }
+
+  .icone_chart_line_up {
+    position: absolute;
+    margin-left: 85%;
+    margin-top: -14%;
+    font-size: 24px;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .liste_hebergements_populaire {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  /* Section 3 */
+
+  .activites_groupe {
+    height: auto;
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .liste_activites {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px 0px 0px 50px;
+  }
+
+  .activites {
+    max-width: 100%;
+  }
+
+  h4 {
+    font-size: 22px;
+    margin-left: 35px;
+    margin-top: 45px;
+  }
+
+  .vieux_port,
+  .Fort_de_Pomegues,
+  .Parc_National_des_Calanques,
+  .iles_du_Frioul,
+  .Parc_Longchamps,
+  .Notre_Dame_de_la_Garde {
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  .vieux_port img,
+  .Fort_de_Pomegues img,
+  .iles_du_Frioul img,
+  .Parc_Longchamps img,
+  .Notre_Dame_de_la_Garde img,
+  .Parc_National_des_Calanques img {
+    height: 160px;
+    width: 110%;
+    object-fit: cover;
+  }
+
+  .groupe_1,
+  .groupe_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+  }
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin-top: 25px;
+  }
+
+  #footer-content {
+    max-width: 1450px;
+    flex-direction: column;
+    margin: 25px 0px 25px 20px;
+  }
+
+  h5 {
+    display: flex;
+    margin-left: 40px;
+    font-size: 20px;
   }
 }
