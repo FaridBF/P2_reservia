@@ -1,15 +1,16 @@
 body {
+  min-width: 350px;
+  max-width: 1525px;
   padding: 0;
   margin: auto;
-  margin-top: 9px;
   font-family: "Raleway", "Sans serif";
 }
 
 /*Header*/
 
 header {
-  max-width: 1450px;
-  margin: auto;
+  max-width: 1525px;
+  margin: 9px 40px 0px 30px;
 }
 
 nav {
@@ -32,6 +33,7 @@ div#logo {
   color: #0065fc;
   width: 25%;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 nav ul li:hover {
@@ -51,8 +53,8 @@ nav img {
 /*Section 1*/
 
 main {
-  max-width: 1450px;
-  margin: auto;
+  max-width: 1525px;
+  margin: 0px 30px 0px 30px;
 }
 
 h1 {
@@ -99,6 +101,7 @@ p {
   height: 39px;
   background-color: #0065fc;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .recherche_responsive {
@@ -129,6 +132,11 @@ p {
   cursor: pointer;
   font-weight: bold;
   height: 45px;
+}
+
+.section_filtre:hover {
+  background-color: #f3f8ff;
+  transform: scale(1.015);
 }
 
 .icone_select {
@@ -169,6 +177,7 @@ p {
 
 #marseille {
   width: 100%;
+  height: 770px;
 }
 
 .hebergement_bg {
@@ -192,6 +201,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 40px;
+  cursor: pointer;
 }
 
 .hebergement {
@@ -199,11 +209,17 @@ h2 {
   max-height: 228px;
   border: solid 4px;
   border-color: white;
-  border-bottom-color: #f0eded;
+  box-shadow: 0 0 16px #0000002e;
   border-radius: 16px;
   background: white;
   margin: 0px 0px 60px 0px;
   overflow: hidden;
+}
+
+.hebergement:hover,
+.hebergement_p:hover,
+.activites:hover {
+  transform: scale(1.02);
 }
 
 .image_hebergement {
@@ -263,6 +279,7 @@ h2 {
   align-items: center;
   max-width: 100%;
   margin-top: 45px;
+  cursor: pointer;
 }
 
 .hebergement_p {
@@ -270,6 +287,7 @@ h2 {
   align-items: stretch;
   max-height: 158px;
   border: solid 4px;
+  box-shadow: 0 0 16px #0000002e;
   border-color: white;
   background: white;
   border-radius: 12px;
@@ -304,7 +322,8 @@ h4 {
 .liste_activites {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .activites {
@@ -312,6 +331,7 @@ h4 {
   flex-direction: column;
   border-bottom: solid 3px;
   border-color: #e3e0e0;
+  box-shadow: 0 0 16px #0000002e;
   border-radius: 16px;
   background: white;
   overflow: hidden;
@@ -417,6 +437,11 @@ footer {
   justify-content: space-between;
 }
 
+.container {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .container li {
   list-style: none;
   margin-top: 10px;
@@ -430,6 +455,9 @@ h5 {
 
 @media screen and (min-width: 700px) and (max-width: 1300px) {
   /* Header */
+  header {
+    margin: 9px 35px 0px 20px;
+  }
 
   .menu {
     width: 35%;
@@ -449,6 +477,10 @@ h5 {
     height: auto;
   }
 
+  #marseille {
+    height: auto;
+  }
+
   #hosts {
     width: 100%;
     padding: 0;
@@ -465,7 +497,7 @@ h5 {
 
   .hebergement {
     height: 228px;
-    width: 32%;
+    width: 28%;
   }
 
   .image_hebergement {
@@ -521,8 +553,10 @@ h5 {
   .liste_activites {
     width: 95%;
     height: auto;
+    margin-left: 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
     height: 1125px;
   }
@@ -598,7 +632,7 @@ h5 {
 }
 
 /*Media queries*/
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   /* Header */
 
   #logo_reservia {
@@ -736,8 +770,16 @@ h5 {
 
   /* Section 2 - article */
 
+  main {
+    margin: 0%;
+  }
+
   .hebergements_groupe {
     flex-direction: column-reverse;
+    height: auto;
+  }
+
+  #marseille {
     height: auto;
   }
 
@@ -817,7 +859,7 @@ h5 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 30px 0px 0px 25px;
+    margin: 9%;
   }
 
   .activites {
@@ -870,7 +912,6 @@ h5 {
   }
 
   #footer-content {
-    max-width: 1450px;
     flex-direction: column;
     margin: 25px 0px 25px 20px;
   }
