@@ -36,6 +36,10 @@ div#logo {
   cursor: pointer;
 }
 
+.menu_li {
+  color: blue;
+}
+
 nav ul li:hover {
   border-top: solid 3px blue;
   padding-top: 25px;
@@ -220,6 +224,7 @@ h2 {
 .hebergement_p:hover,
 .activites:hover {
   transform: scale(1.02);
+  transition-duration: 0.1s;
 }
 
 .image_hebergement {
@@ -439,12 +444,20 @@ footer {
 
 .container {
   cursor: pointer;
-  text-decoration: none;
 }
 
-.container li {
+.container ul li {
   list-style: none;
   margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container ul li a:hover {
+  border-bottom: 1px solid;
 }
 
 h5 {
