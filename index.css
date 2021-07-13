@@ -3,7 +3,7 @@ body {
   max-width: 1525px;
   padding: 0;
   margin: auto;
-  font-family: "Raleway", "Sans serif";
+  font-family: "Raleway", sans-serif;
 }
 
 /*Header*/
@@ -140,7 +140,7 @@ p {
 
 .section_filtre:hover {
   background-color: #f3f8ff;
-  transform: scale(1.015);
+  transform: scale(1.04);
 }
 
 .icone_select {
@@ -223,7 +223,7 @@ h2 {
 .hebergement:hover,
 .hebergement_p:hover,
 .activites:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   transition-duration: 0.1s;
 }
 
@@ -648,18 +648,17 @@ h5 {
 @media screen and (max-width: 700px) {
   /* Header */
 
+  nav {
+    flex-direction: column;
+  }
+
   #logo_reservia {
     width: 20%;
-    margin-left: 20px;
   }
 
   .menu {
     width: 100%;
     padding-left: 0%;
-  }
-
-  nav {
-    flex-direction: column;
   }
 
   nav ul li {
@@ -673,25 +672,6 @@ h5 {
 
   nav img {
     height: 35px;
-  }
-
-  .filtre {
-    padding: 0 32px;
-  }
-
-  .titre_filtre {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .section_filtre {
-    display: flex;
-  }
-
-  .media_inscrire {
-    position: absolute;
-    right: 20px;
-    top: 20px;
   }
 
   .media_hebergement_activite {
@@ -709,23 +689,29 @@ h5 {
     justify-content: center;
   }
 
+  .media_inscrire {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
   /* Section 1 - Navigation*/
 
   h1 {
     height: auto;
-    margin-left: 20px;
+    margin-left: 30px;
     max-width: 100%;
     width: 68%;
   }
 
   .p_section {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 30px;
     max-width: 100%;
   }
 
   .navigation {
-    margin-left: 20px;
+    margin-left: 30px;
     max-width: 100%;
     width: 85%;
     height: 38px;
@@ -764,11 +750,24 @@ h5 {
 
   /* Section 1 Les filtres */
 
+  .filtre {
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .titre_filtre {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .section_filtre {
+    display: flex;
+  }
+
   .info {
     margin-left: 30px;
     max-width: 100%;
-    width: 70%;
-    margin-top: -15px;
+    width: 75%;
   }
 
   .icone_info {
