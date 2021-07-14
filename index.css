@@ -67,7 +67,7 @@ h1 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .navigation {
@@ -126,6 +126,10 @@ p {
   align-items: center;
 }
 
+.economique_familial {
+  display: flex;
+}
+
 .section_filtre {
   display: flex;
   align-items: center;
@@ -164,11 +168,12 @@ p {
   border: solid 1px;
   border-radius: 50%;
   border-color: #e7e7e7;
-  padding: 2px;
+  padding: 5px;
   background-color: #ffffff;
   color: #3787fd;
-  padding-right: 6px;
-  padding-left: 6px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 0.5rem;
 }
 
 /*Section 2 article*/
@@ -210,7 +215,7 @@ h2 {
 
 .hebergement {
   width: 25%;
-  max-height: 228px;
+  max-height: 240px;
   border: solid 4px;
   border-color: white;
   box-shadow: 0 0 16px #0000002e;
@@ -260,7 +265,7 @@ h2 {
 
 .afficher_plus {
   font-size: 21px;
-  margin-left: 45px;
+  margin-left: 35px;
   margin-top: -20px;
   font-weight: bold;
 }
@@ -297,13 +302,13 @@ h2 {
   background: white;
   border-radius: 12px;
   margin: 0px 0px 60px 0px;
-  width: 95%;
+  width: 100%;
   overflow: hidden;
 }
 
 .image_hebergement_populaire img {
-  height: 158px;
-  width: 135px;
+  height: 175px;
+  width: 130px;
   object-fit: cover;
 }
 
@@ -321,7 +326,6 @@ h2 {
 
 h4 {
   font-size: 22px;
-  margin-left: 45px;
 }
 
 .liste_activites {
@@ -509,7 +513,7 @@ h5 {
   }
 
   .hebergement {
-    height: 228px;
+    height: 240px;
     width: 28%;
   }
 
@@ -646,7 +650,20 @@ h5 {
 
 /*Media queries*/
 @media screen and (max-width: 700px) {
+  /* Html - Body */
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   /* Header */
+
+  header {
+    min-width: 350px;
+    margin: 10px 0px 0px 20px;
+  }
 
   nav {
     flex-direction: column;
@@ -662,11 +679,12 @@ h5 {
   }
 
   nav ul li {
-    padding-bottom: 8px;
+    padding-bottom: 15px;
   }
 
-  nav ul li:hover {
+  nav ul div.media_hebergement_activite li:hover {
     border-top: none;
+    border-bottom: 3px #0065fc solid;
     width: 100%;
   }
 
@@ -682,16 +700,13 @@ h5 {
     border-bottom-width: thin;
   }
   .media_hebergement_activite :hover {
-    color: #0065fc;
-    border-bottom: 2px #0065fc solid;
-    padding-bottom: 10px;
     display: flex;
     justify-content: center;
   }
 
   .media_inscrire {
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 20px;
   }
 
@@ -701,13 +716,15 @@ h5 {
     height: auto;
     margin-left: 30px;
     max-width: 100%;
-    width: 68%;
+    width: 85%;
+    font-size: 22px;
   }
 
   .p_section {
     margin-left: 30px;
     margin-bottom: 30px;
     max-width: 100%;
+    font-size: 16px;
   }
 
   .navigation {
@@ -752,7 +769,7 @@ h5 {
 
   .filtre {
     padding: 0 30px;
-    width: 100%;
+    width: 80%;
   }
 
   .titre_filtre {
@@ -760,14 +777,19 @@ h5 {
     margin-top: 10px;
   }
 
+  .economique_familial {
+    display: flex;
+    width: 100%;
+  }
+
   .section_filtre {
     display: flex;
+    margin-right: 3%;
   }
 
   .info {
     margin-left: 30px;
-    max-width: 100%;
-    width: 75%;
+    width: 100%;
   }
 
   .icone_info {
@@ -775,9 +797,10 @@ h5 {
   }
 
   .info p {
-    font-size: 15px;
+    font-size: 16px;
     display: flex;
     align-items: flex-start;
+    width: 90%;
   }
 
   /* Section 2 - article */
@@ -815,7 +838,7 @@ h5 {
   }
 
   .hebergement {
-    height: 228px;
+    height: 240px;
     width: 85%;
   }
 
@@ -835,7 +858,8 @@ h5 {
   /* Section 2 - aside */
 
   #hebergement_populaire {
-    width: auto; /* bg gris des + populaires prend tte largeur */
+    width: auto;
+    height: 700px;
   }
 
   .icone_chart_line_up {
@@ -857,6 +881,10 @@ h5 {
 
   .hebergement_p {
     width: 100%;
+  }
+
+  .image_hebergement_populaire img {
+    width: 110px;
   }
 
   /* Section 3 */
