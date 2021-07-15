@@ -667,6 +667,7 @@ h5 {
 
   nav {
     flex-direction: column;
+    position: relative;
   }
 
   #logo_reservia {
@@ -706,8 +707,8 @@ h5 {
 
   .media_inscrire {
     position: absolute;
-    right: 15px;
-    top: 20px;
+    right: 10px;
+    top: 15px;
   }
 
   /* Section 1 - Navigation*/
