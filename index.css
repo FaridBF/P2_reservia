@@ -683,10 +683,9 @@ h5 {
     padding-bottom: 15px;
   }
 
-  nav ul div.media_hebergement_activite li:hover {
+  nav ul li.media_hebergement_activite:hover {
     border-top: none;
     border-bottom: 3px #0065fc solid;
-    width: 100%;
   }
 
   nav img {
@@ -700,7 +699,7 @@ h5 {
     justify-content: center;
     border-bottom-width: thin;
   }
-  .media_hebergement_activite :hover {
+  .media_hebergement_activite:hover {
     display: flex;
     justify-content: center;
   }
