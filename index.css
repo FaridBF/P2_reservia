@@ -366,7 +366,8 @@ h4 {
 
 .Fort_de_Pomegues {
   max-height: 500px;
-  max-width: 290px;
+  max-width: 372px;
+  width: 290px;
 }
 
 .Fort_de_Pomegues img {
@@ -593,6 +594,7 @@ h5 {
   .Notre_Dame_de_la_Garde {
     max-width: 100%;
     max-height: 80%;
+    width: 100%;
   }
 
   .vieux_port img,
@@ -920,6 +922,7 @@ h5 {
   .Notre_Dame_de_la_Garde {
     max-width: 100%;
     max-height: 80%;
+    width: 100%;
   }
 
   .vieux_port img,
